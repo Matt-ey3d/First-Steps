@@ -91,16 +91,16 @@ https://templatemo.com/tm-590-topic-listing
                 <div class = "container">
                    <div class="justify-content-center align-items-center">
                             <div>
-                                <input type="text" class="form-control" placeholder="Nome de Usuário" required>
+                                <input type="text" class="form-control" placeholder="Nome de Usuário" name="uname" required>
                                 <br>
-                                <input type="password" class="form-control" placeholder="Palavra-Passe" required>
+                                <input type="password" class="form-control" placeholder="Palavra-Passe" name="password" required>
                                 <br>
                                 <a href="sign-up.html">
                                     Não tem conta?
                                 </a>
                                 <br>
                                 <br>
-                                <button type="submit" class="form-control">Entrar</button>
+                                <button type="submit" class="form-control" name="submitbutton">Entrar</button>
                             </div>
                         </div>
                 </div>
@@ -165,11 +165,19 @@ https://templatemo.com/tm-590-topic-listing
     </div>
 </footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
+		
 
+		<script>
+            const supabase = supabase.createClient('https://qtatwpnbcnwwwdiazmys.supabase.co', 'sb_publishable_HeOp2fFVa79gsgOIO2NyQA_iGqrasRX');
+			
+        </script>
+		
     </body>
+
 </html>
